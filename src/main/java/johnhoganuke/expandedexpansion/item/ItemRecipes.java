@@ -17,18 +17,14 @@ import static crazypants.util.RecipeUtil.addShaped;
 public class ItemRecipes {
 
   public static void addRecipes() {
-    ItemStack basicGear = new ItemStack(EnderIO.itemMachinePart, 1, MachinePart.BASIC_GEAR.ordinal());
-    String electricalSteel = ELECTRICAL_STEEL.getOreIngot();
-    String conductiveIron = CONDUCTIVE_IRON.getOreIngot();
-    String vibCry = VIBRANT_CYSTAL.oreDict;
-    String enAlloy = ENERGETIC_ALLOY.getOreIngot();
-    String darkSteel = DARK_STEEL.getOreIngot();
-    String soularium = SOULARIUM.getOreIngot();
+    //ItemStack basicGear = new ItemStack(EnderIO.itemMachinePart, 1, MachinePart.BASIC_GEAR.ordinal());
+    //String yellowXycronium = SOULARIUM.getOreIngot();    // FIGURE THIS OUT LATER!!!
 
-    // Wrench
-    ItemStack wrench = new ItemStack(EnderIO.itemYetaWench, 1, 0);
-    addShaped(wrench, "s s", " b ", " s ", 's', electricalSteel, 'b', basicGear);
-
+    // XycroniumDiamond
+    ItemStack wrench = new ItemStack(ExpandedExpansion.XItemDiamond, 8, 0);
+    addShaped(wrench, "iii", "idi", "iii", 'i', xItemIngot, 'd', Items.diamond);
+    
+    /*
     //Magnet
     ItemStack magnet = new ItemStack(DarkSteelItems.itemMagnet, 1, 0);
     DarkSteelItems.itemMagnet.setEnergy(magnet, 0);
@@ -66,5 +62,6 @@ public class ItemRecipes {
     addShaped(DarkSteelItems.itemDarkSteelPickaxe.createItemStack(), "sss", " w ", " w ", 's', darkSteel, 'w', "woodStick");
     addShaped(DarkSteelItems.itemDarkSteelAxe.createItemStack(), "ss ", "sw ", " w ", 's', darkSteel, 'w', "woodStick");
     addShaped(DarkSteelItems.itemDarkSteelAxe.createItemStack(), "ss ", "sw ", " w ", 's', darkSteel, 'w', "stickWood");
+    */
   }
 }
