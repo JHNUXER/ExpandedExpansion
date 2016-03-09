@@ -1,8 +1,8 @@
-package johnhoganuke.expanded_expansion;
+package johnhoganuke.expandedexpansion;
 
-import static johnhoganuke.expanded_expansion.ExpandedExpansion.MODID;
-import static johnhoganuke.expanded_expansion.ExpandedExpansion.VERSION;
-import static johnhoganuke.expanded_expansion.ExpandedExpansion.MOD_NAME;
+import static johnhoganuke.expandedexpansion.ExpandedExpansion.MODID;
+import static johnhoganuke.expandedexpansion.ExpandedExpansion.VERSION;
+import static johnhoganuke.expandedexpansion.ExpandedExpansion.MOD_NAME;
 
 import java.io.BufferedWriter;
 import java.io.File;
