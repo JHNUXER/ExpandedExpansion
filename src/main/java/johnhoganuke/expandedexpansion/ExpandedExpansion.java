@@ -11,5 +11,5 @@ import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Locale;
 
-@Mod(modid = MODID, name = MOD_NAME, version = VERSION, dependencies = "after:projectx;", guiFactory = "crazypants.enderio.config.ConfigFactoryEIO")
-public class ExpandedExpansion {
+@Mod
+(modid=ProjectX.MODID, name=ProjectX.NAME, version=ProjectX.VERSION)
