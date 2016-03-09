@@ -1,3 +1,6 @@
+// ****************************************************
+// Not sure what to do with this yet...
+// ****************************************************
 package snowpaw.projectx.core.render;
 
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
