@@ -12,4 +12,15 @@ import java.util.List;
 import java.util.Locale;
 
 @Mod
-(modid=ProjectX.MODID, name=ProjectX.NAME, version=ProjectX.VERSION)
+(modid=ExpandedExpansion.MODID, name=ExpandedExpansion.NAME, version=ExpandedExpansion.VERSION)
+public class ExpandedEpansion {
+  public static final String MODID = "ExpandedExpansion";
+	public static final String NAME = "ExpandedExpansion";
+	public static final String VERSION = "0.0.01.0";
+	public static final String INSTANCE = "expandedexpansion";
+	public static final String CSIDE = "johnhoganuke.expandedexpansion.ClientProxy";
+	public static final String SSIDE = "johnhoganuke.expandedexpansion.CommonProxy";
+	
+	@SidedProxy
+	(ClientSide=ExpandedExpansion.CSIDE, ServerSide=ExpandedExpansion.SSIDE)
+}
