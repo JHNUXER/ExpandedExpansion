@@ -8,7 +8,7 @@ public class EnergizedItemManager
 	 * Discharges an IEnergizedItem with the defined amount of energy.
 	 * @param itemStack - ItemStack to discharge
 	 * @param amount - amount of energy to discharge from the item, usually the total amount of energy needed in a TileEntity
-	 * @return amount of energy discharged
+	 * @return amount of energy discharged 
 	 */
 	public static double discharge(ItemStack itemStack, double amount)
 	{
