@@ -11,6 +11,10 @@ import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Locale;
 
+import johnhoganuke.expandedexpansion.CommonProxy;
+import johnhoganuke.expandedexpansion.ClientProxy;
+import snowpaw.projectx.XLogger;
+
 @Mod
 (modid=ExpandedExpansion.MODID, name=ExpandedExpansion.NAME, version=ExpandedExpansion.VERSION)
 public class ExpandedEpansion {
