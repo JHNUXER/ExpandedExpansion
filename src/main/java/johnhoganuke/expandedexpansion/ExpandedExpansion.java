@@ -23,4 +23,39 @@ public class ExpandedEpansion {
 	
 	@SidedProxy
 	(ClientSide=ExpandedExpansion.CSIDE, ServerSide=ExpandedExpansion.SSIDE)
+	public static CommonProxy proxy;
+	
+	@Instance
+	(value=ExpandedExpansion.INSTANCE)
+	public static ExpandedExpansion instance;
+	
+	public static ServerConfigurationManager serverMgr;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+		proxy.preInit();
+		XLogger.debug("ProjectX Debugging...");
+		XConfig.preInit(event);
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event){
+		proxy.init();
+		XLogger.info("Core Module Initialized !");
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event){
+		proxy.postInit();
+		// FluidUtils.init();     // From snowpaw's ProjectX.jar
+	}
+	
+	@EventHandler
+	public void serverInit(FMLServerStartingEvent event){
+		MinecraftServer server = event.getServer();
+		ServerConfigurationManager mgr = server.getConfigurationManager();
+		serverMgr = mgr;
+		XLogger.info("I guess the server initialized successfully...");
+	}
+
 }
