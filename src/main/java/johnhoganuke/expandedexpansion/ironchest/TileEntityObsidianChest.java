@@ -1,4 +1,4 @@
-package cpw.mods.ironchest;
+package johnhoganuke.expandedexpansion.ironchest;
 
 public class TileEntityObsidianChest extends TileEntityIronChest {
 
