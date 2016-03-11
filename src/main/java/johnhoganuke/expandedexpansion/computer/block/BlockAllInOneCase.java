@@ -1,0 +1,3 @@
+package johnhoganuke.expandedexpansion.computer.block;
+
+// I don't feel like decoding SCALA right now...
