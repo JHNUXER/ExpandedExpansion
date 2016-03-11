@@ -24,6 +24,9 @@ public class ItemRecipes {
     ItemStack wrench = new ItemStack(ExpandedExpansion.XItemDiamond, 8, 0);
     addShaped(wrench, "iii", "idi", "iii", 'i', xItemIngot, 'd', Items.diamond);
     
+    ItemStack wrench = new ItemStack(ExpandedExpansion.ItemExpansionWrench, 1, 0);
+    addShaped(wrench, "i i", " r ", " r ", 'i', xItemIngot, 'r', Items.iron_ingot);
+    
     /*
     //Magnet
     ItemStack magnet = new ItemStack(DarkSteelItems.itemMagnet, 1, 0);
